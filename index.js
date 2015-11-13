@@ -9,16 +9,45 @@ var app = express();
 var slack = new Slack(process.env.SLACK_HOOK_URL);
 
 var asciiEmoticons = {
+    "arg": "(╯°Д°）╯︵/(.□ . \\)",
     "bear": "ʕ •ᴥ•ʔ",
+    "content": "(´ー`)",
+    "crying": "ಥ_ಥ",
+    "dance": "ᕕ( ᐛ )ᕗ",
+    "die": "(✖╭╮✖)",
     "diretide": "༼ つ ◕_◕ ༽つ GIVE DIRETIDE",
+    "disapprove": "ಠ_ಠ",
     "do it": "(☞ﾟヮﾟ)☞",
+    "excited": "*✲ﾟ*｡✧٩(･ิᴗ･ิ๑)۶*✲ﾟ :hart: *｡✧",
+    "eyeroll": "◔_◔",
     "eyes": "ಠ_ಠ",
+    "face": "(╯°□°)╯︵ ʞooqǝɔɐℲ",
+    "fitch": "( °┏＿┓°)"  ,
     "flip": "(╯°□°）╯︵ ┻━┻",
+    "frown": "ಠ╭╮ಠ",
+    "hmm": "╭∩╮(-_-)╭∩╮" ,
+    "hugs": "٩(๑•◡-๑)۶ⒽⓤⒼ :hart:",
     "lenny": "( ͡° ͜ʖ ͡°)",
+    "lolhard": "。゜（゜＾▽＾゜）゜。",
+    "love": "(≚ᄌ≚)ℒℴѵℯ :hart:",
+    "ooh": "（◎ ｡ ◎）ooOO" ,
+    "paget": "╰(´・｀)ﾉ",
+    "sad": "◕︵◕",
+    "satuan": "↶（｀∇´）"   ,
+    "sayhello": " ̿ ̿'̿'\̵͇̿̿\\з=(•益•)=ε/̵͇̿̿/,'̿'̿ ",
     "shades": "(⌐■_■)",
     "shrug": "¯\\_(ツ)_/¯",
+    "slap": "Slaps you with a large Trout! `·.¸¸ ><((((º>.·",
+    "sleep": "（= ‸ =）"   ,
+    "smile": "◕ ◡ ◕",
+    "soon": "◉‿◉",
+    "stare": "◉_◉",
     "unflip": "┬──┬◡ﾉ(° -°ﾉ)",
-    "y u no": "ლ(ಠ益ಠლ)"
+    "whatever": "ヽ( ´¬`)ノ",
+    "win": "٩(^ᴗ^)۶" ,
+    "y u no": "ლ(ಠ益ಠლ)",
+    "yosh": "(๑•̀ㅂ•́)و",
+    "zoid": "(V)(•,,,•)(V) woo woo woop"
 };
 
 var helpResponseMessage = '';
